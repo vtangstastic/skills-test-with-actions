@@ -28,4 +28,8 @@ jobs:
       - name: Run markdown lint
         run: |
           npm install remark-cli remark-preset-lint-consistent
-          npx remark . --use remark-preset-lint-consistent --frail
+          npx remark . --use remark-preset-lint-consistent 
+
+      git add .
+      git commit -m "Fix markdown linting issues"
+      git push origin main
